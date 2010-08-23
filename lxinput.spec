@@ -1,11 +1,11 @@
 Summary:	Keyboard and mouse configurator for LXDE
 Name:		lxinput
-Version:	0.1.1
+Version:	0.3.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
-# Source0-md5:	b497d511e3310c293436aa11c0142ebd
+# Source0-md5:	34e8d557d76ad45141b8f42b62e7a0e1
 URL:		http://www.lxde.org/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.12.0
