@@ -1,11 +1,13 @@
+# TODO
+# - gtk3 possible:   --enable-gtk3           enable to use gtk-3.0 instead of gtk-2.0
 Summary:	Keyboard and mouse configurator for LXDE
 Name:		lxinput
-Version:	0.3.0
+Version:	0.3.1
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
-# Source0-md5:	34e8d557d76ad45141b8f42b62e7a0e1
+# Source0-md5:	948ad3371325f53bf8c4a7ed555558a4
 URL:		http://www.lxde.org/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.12.0
@@ -26,11 +28,10 @@ LXDE.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/{frp,ur_PK}
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{frp,ur_PK}
 
 %find_lang %{name}
 
