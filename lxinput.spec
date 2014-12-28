@@ -9,7 +9,7 @@ Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
 # Source0-md5:	5bf563d04984ef2a147433f3bdda687b
 URL:		http://www.lxde.org/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 2:2.12.0
 BuildRequires:	intltool >= 0.40
 BuildRequires:	pkgconfig
