@@ -1,12 +1,12 @@
 #
 # Conditional build:
-%bcond_with	gtk3	# use GTK+3 instead of GTK+2
+%bcond_without	gtk3	# use GTK+3 instead of GTK+2
 
 Summary:	Keyboard and mouse configurator for LXDE
 Summary(pl.UTF-8):	Konfigurator klawiatury i myszy dla LXDE
 Name:		lxinput
 Version:	0.3.5
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		X11/Applications
 Source0:	https://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.xz
